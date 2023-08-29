@@ -1,18 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { NavbarNested } from "../src/components/Navbar";
 import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from './page/Home'
-import Report from "./page/Report"
-import Product from "./page/Product"
-import Team from "./page/Team"
-import Message from "./page/Message"
-import Support from "./page/Support"
+import Home from './page/Home';
+import Message from "./page/Message";
+import Product from "./page/Product";
+import Report from "./page/Report";
+import Support from "./page/Support";
+import Team from "./page/Team";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+      <NavbarNested/>  
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/reports" element={<Report />} />
