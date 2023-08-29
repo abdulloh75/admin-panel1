@@ -5,7 +5,7 @@ import { IoIosPaper, IoMdHelpCircle, IoMdPeople } from "react-icons/io"
 
 export const SIdebarData = [
   {
-    title: "Home",
+    title: "Add admin",
     path: "/",
     icon: <AiFillHome />,
     cName: 'nav-text'
